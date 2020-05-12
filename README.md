@@ -1,2 +1,3 @@
-# dive-into-d3
+# A Dive Into D3
+
 Starter code for a D3 tutorial
