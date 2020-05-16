@@ -3,9 +3,9 @@
 // borrowed heavily from this chart:
 // https://bl.ocks.org/pstuffa/26363646c478b2028d36e7274cedefa6
 
-export const drawChart = (arr) => {
+export const drawChart = (chartData) => {
 
 
-  console.log(arr);
+  console.log(chartData);
 
 }
