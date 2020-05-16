@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>D3 Weather Chart</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- local styles -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <nav id="nav" class="nav navbar">
+     <div class="col-md-4">
+       <h1>Weather Chart</h1>
+     </div>
+     <div class="col-md-8">
+       Enter a zip code for the 5-day forecast: <br>
+       <input type="text" id="zip-input" value="60606">
+       <button id="submit" class="btn btn-primary">Submit</button>
+     </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="city">
+        <p>5-day forecast for <strong><span id="city"></span></strong></p>
+      </div>
+      <div id="chart">
+
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- D3 Version 5 -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Local Javascript -->
+    <script type="module" src="javascripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.nav {
+  background-color: #999;
+}
+
+.city {
+  margin: 1em;
+  display: none;
+  text-align: center;
+}
+
+#chart {
+  margin: 10px;
+}
+
+svg {
+  border: 1px solid #000;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1;
+}
