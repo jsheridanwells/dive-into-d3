@@ -22,9 +22,9 @@ $('#submit').click(() => {
     });
 });
 
-// takes raw JSON from openweather.org
-// returns array of temperatures for given type: temp, temp_min, or temp_max
-const sortTimeTemps = (data) => {
+// Helper to take raw JSON from openweather.org
+// and return an array of temperatures for given type: temp, temp_min, or temp_max
+function sortTimeTemps(data) {
     let timeTemps = [];
     data.list.forEach((list) => {
         timeTemps.push({
@@ -33,4 +33,4 @@ const sortTimeTemps = (data) => {
         });
     });
     return timeTemps;
-};
+}

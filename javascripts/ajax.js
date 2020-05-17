@@ -1,8 +1,8 @@
 'use strict';
-import { apiKey} from './apiKey.js';
+import { apiKey } from './apiKey.js';
 
 // API call to OpenWeatherMap.org, takes in zip code input from main controller
-export const getWeather = (zip) => {
+export function getWeather(zip) {
   return new Promise((resolve, reject) => {
     $.ajax({
         url: `https://api.openweathermap.org/data/2.5/forecast?zip=${ zip },us&APPID=${ apiKey }&units=imperial`
@@ -10,7 +10,7 @@ export const getWeather = (zip) => {
     .then(data => resolve(data))
     .catch(error => reject(error.responseJSON.message));
   });
-};
+}
 
 // in case api fails,
 // read from local json
