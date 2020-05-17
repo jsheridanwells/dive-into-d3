@@ -11,8 +11,7 @@ $('#submit').click(() => {
   let zip = $('#zip-input').val();
   getWeather(zip)
     .then(data => {
-      console.log(data);
-      $('.city').css('display', 'initial');
+      $('.city').css('visibility', 'initial');
       $('#city').text(data.city.name);
       let processedData = sortTimeTemps(data);
       drawChart(processedData);

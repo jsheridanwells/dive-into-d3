@@ -12,21 +12,20 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <nav id="nav" class="nav navbar">
-     <div class="col-md-4">
-       <h1>Weather Chart</h1>
-     <ediv>
-     <div class="col-md-8">
-       Enter a zip code for the 5-day forecast: <br>
-       <input type="text" id="zip-input" value="60606">
-       <button id="submit" class="btn btn-primary">Submit</button>
-     </div>
-    </nav>
-
     <div class="container-fluid">
-      <div class="city">
-        <p>5-day forecast for <strong><span id="city"></span></strong></p>
-      </div>
+      <nav id="nav" class="nav navbar row">
+       <div class="col-4">
+         <h1>Weather Chart</h1>
+       </div>
+       <div class="col-4">
+         Enter a zip code for the 5-day forecast: <br>
+         <input type="text" id="zip-input" value="60606">
+         <button id="submit" class="btn btn-primary">Submit</button>
+       </div>
+        <div id="city-container" class="col-4 city">
+          <p>5-day forecast for <strong><span id="city"></span></strong></p>
+        </div>
+      </nav>
       <div id="chart">
 
       </div>

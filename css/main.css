@@ -1,10 +1,16 @@
 .nav {
   background-color: #999;
+    padding: 0;
+
+}
+
+.nav > div {
+    margin: 0;
 }
 
 .city {
   margin: 1em;
-  display: none;
+  visibility: hidden;
   text-align: center;
 }
 
