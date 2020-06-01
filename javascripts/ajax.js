@@ -14,7 +14,7 @@ export function getWeather(zip) {
 
 // in case api fails,
 // read from local json
-// export const getWeather = () => {
+// export function getWeather() {
 //   return new Promise((resolve, reject) => {
 //     $.ajax({
 //       url: '../data/sample.json'
